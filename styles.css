@@ -60,7 +60,7 @@ body {
 }
 
 .about {
-    height: 40rem;
+
     border-radius: 50px;
     background: linear-gradient(145deg, #373737, #414141);
     box-shadow: 20px 20px 60px #343434,
@@ -70,7 +70,8 @@ body {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-evenly;
-
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .container-a {
@@ -100,21 +101,27 @@ body {
 
 .s-cards {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+
+
+
+
+
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .s-card {
     flex-direction: row;
     display: flex;
-    height: 100px;
+    height: 270px;
+    width: 270px;
     align-items: center;
     justify-content: center;
     padding: 23px;
     margin: 10px;
-
-
+    background-color: #444444;
+    border-radius: 20%;
 }
 
 
@@ -184,17 +191,18 @@ body {
 
 @media (max-width: 900px) {
     .s-cards {
-        flex-direction: column;
-        align-items: flex-start
+        
+        justify-content: center
     }
 
     .s-card {
         justify-content: flex-start;
-        height: 130px;
+        height: 200px;
+        width: 200px;
     }
 
     .about {
-        height: 45em;
+        height: 65em;
         justify-content: center;
     }
 
